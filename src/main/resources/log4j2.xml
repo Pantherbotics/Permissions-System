@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>%d %highlight{%-5p | %-30C{1.}:%-5L [%t] %m%n}{INFO=white}</pattern>
+
+                <!--<MarkerPatternSelector defaultPattern="%d %highlight{%-5p} | %style{%C{1.} [%t] %m}%n">-->
+                <!--<PatternMatch key="FLOW" pattern="[%-5level] %c{1.} ====== %C{1.}.%M:%L %msg ======%n"/>-->
+                <!--</MarkerPatternSelector>-->
+
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
